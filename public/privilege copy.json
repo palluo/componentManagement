@@ -1,0 +1,162 @@
+{
+	"widgetOnScreen": {
+		"widgets": [
+			{
+				"id": "2b3ba41e35854b99b1ab9bee0ffa7409",
+				"name": "Head",
+				"uri": "header",
+				"version": null,
+				"thems": {
+					"backgroundColor": "#0db8fd",
+					"color": "#000000",
+					"fontFamily": "微软雅黑"
+				},
+				"position": {
+					"left": 0,
+					"right": 0,
+					"bottom": null,
+					"top": 0,
+					"width": null,
+					"height": 4
+				}
+			},
+			{
+				"id": "07e484e2a4854247ae4150e7f4db134e",
+				"name": "通用工具栏",
+				"uri": "commonToolBar",
+				"version": null,
+				"thems": {
+					"backgroundColor": null,
+					"color": "#000000",
+					"fontFamily": null
+				},
+				"position": {
+					"left": null,
+					"right": 1,
+					"bottom": null,
+					"top": 5,
+					"width": 20,
+					"height": 3
+				}
+			}
+		]
+	},
+	"widgetPool": {
+		"widgets": [
+			{
+				"id": "5c787a0fc71f49a9877ea6b0d37e4af9",
+				"name": "属性查询",
+				"icon": "dgp-icon-indentify1",
+				"uri": "indentify",
+				"config": null,
+				"configContent": null,
+				"containerId": "07e484e2a4854247ae4150e7f4db134e",
+				"thems": {
+					"backgroundColor": null,
+					"color": "#000000",
+					"fontFamily": null
+				},
+				"position": {
+					"left": null,
+					"right": 2,
+					"bottom": null,
+					"top": 6,
+					"width": null,
+					"height": 40
+				}
+			}
+		],
+		"groups": []
+	},
+	"map": {
+		"position": {
+			"left": 6,
+			"right": 0,
+			"bottom": 0,
+			"top": 4,
+			"width": null,
+			"height": null
+		},
+		"basemaps": [
+			{
+				"guid": "998e6f7f5a40499799e6d3e75bd6797",
+				"name": "影像1",
+                "url": "http://bimmid-sv.up.gz/server/rest/services/Hosted/pzxi_tdom_gzx_tif/MapServer",
+				"type": "tileLayer",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+            },
+            {
+				"guid": "998e6f7f5a40499799e6d3e75bd67972",
+				"name": "影像2",
+				"url": "http://bimmid-sv.up.gz/server/rest/services/pzxi_dem_gzx_tif/ImageServer",
+				"type": "tileLayer",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			}
+        ],
+		"operationallayers": [
+            {
+				"guid": "998e6f7f5a40499799e6d3e75bd6797d",
+				"name": "TianheBuildings_D1",
+				"url": "http://bimmid-sv.up.gz/server/rest/services/Hosted/TianheBuildings_D1/SceneServer",
+				"type": "scenelayer",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+            },
+            {
+				"guid": "998e6f7f5a40499799e6d3e75bd6797d1",
+				"name": "TianheBuildings_B",
+				"url": "http://bimmid-sv.up.gz/server/rest/services/Hosted/TianheBuildings_B/SceneServer",
+				"type": "scenelayer",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+            },
+            {
+				"guid": "998e6f7f5a40499799e6d3e75bd6797d2",
+				"name": "TianheBuildings_A",
+				"url": "http://bimmid-sv.up.gz/server/rest/services/Hosted/TianheBuildings_A/SceneServer",
+				"type": "scenelayer",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			}
+		],
+		"geometryService": {
+			"guid": "074715d939974297843e2e2f26199555",
+			"name": "几何服务",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+			"type": "geometry",
+			"icon": null,
+			"visible": false,
+			"dynamicToken": false
+		},
+		"mapOptions": {
+			"extent": {
+				"xmin": 6484650.0,
+				"ymin": 6583145.0,
+				"xmax": 6499493.0,
+				"ymax": 6598914.0
+			},
+			"slider": false
+		},
+		"3D": false,
+		"2D": true
+	},
+	"appBase": {
+		"appThems": {
+			"backgroundColor": "#ffff",
+			"color": "#0000",
+			"fontSize": 16,
+			"fontFamily": "微软雅黑",
+			"themsColor":"#38A"
+		},
+		"systemParameter":{
+			"systemName":"React+TypeScript+ArcGIS演示系统"
+		}
+	}
+}

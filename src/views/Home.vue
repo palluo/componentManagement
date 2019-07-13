@@ -1,38 +1,45 @@
 <template>
-  <div id="map" class="home"></div>
+<div id="home">
+ <div id="toolShow">
+  </div>
+  <div id="map" class="map"></div>
+</div>
+ 
 </template>
 
 <script>
-// const MapView = require('esri/views/MapView');
-// const Map = require('esri/Map');
-import MapView from "esri/views/MapView";
-import SceneView from "esri/views/SceneView";
-import Map from "esri/Map";
-
+import initConfig from '../initConfig'
 export default {
   name: "home",
+  props: {
+  },
   components: {},
   mounted() {
-    var map = new Map({
-      basemap: "streets",
-      ground: "world-elevation"
-    });
-    // var view = new MapView({
-    //   container: "map",
-    //   map: map,
-    //   center: [-118.71511, 34.09042],
-    //   zoom: 11
-    // });
-    var view = new SceneView({
-      container: "map", // Reference to the DOM node that will contain the view
-      map: map // References the map object created in step 3
-    });
+      (async() => {
+          await initConfig();
+      })();
+  },
+  methods: {
   }
 };
 </script>
 <style lang="scss">
-.home {
+#home {
   width: 100%;
-  height: 600px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position:absolute;
+  .map{
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      position:absolute;
+  }
+  #toolShow {
+      width: 100%;
+      z-index: 100;
+      position:absolute;
+  }
 }
 </style>

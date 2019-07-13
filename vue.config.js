@@ -4,12 +4,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 //本地方案：复制官方api到/public/ajs目录
 const ajsLocalPath = "./ajs";
+//const ajsOfficialPath = "http://127.0.0.1/api/arcgis_js_v411_api";
 const ajsOfficialPath = "https://js.arcgis.com/4.11";
 const ajsConfigs = {
   official: {
     cssPath: `${ajsOfficialPath}/esri/themes/light/main.css`,
     dojoPath: `${ajsOfficialPath}/dojo`,
-    initPath: `${ajsOfficialPath}/dojo/dojo.js`
+    initPath: `${ajsOfficialPath}/init.js`
   },
   local: {
     cssPath: `${ajsLocalPath}/esri/themes/light/main.css`,
@@ -20,15 +21,18 @@ const ajsConfigs = {
 // const ajsConfig = ajsConfigs.local;
 const ajsConfig = ajsConfigs.official;
 const publicPath = "./";
-
+function resolve(dir) {
+    return path.join(__dirname, dir);
+  }
 module.exports = {
   publicPath,
-  // outputDir: 'dist',
+  // outputDir: 'vue-arcgis',
   productionSourceMap: false, //生产环境关闭SourceMap
-  chainWebpack: config => {
-    console.log(config.entry);
-  },
+  // chainWebpack: config => { },
   configureWebpack: config => {
+      // 别名
+    //   config.resolve.alias
+    //   .set("@", resolve("src"));
     return {
       output: {
         libraryTarget: "amd"
@@ -48,9 +52,16 @@ module.exports = {
         }
       ],
       plugins: [
+        new webpack.DefinePlugin({
+          "process.env": {
+            dojoPath: JSON.stringify(ajsConfig.dojoPath),
+            publicPath: JSON.stringify(publicPath)
+          }
+        }),
         new HtmlWebpackPlugin({
           inject: false,
-          chunks: ["vendor", "app", "manifest"],
+          // 会导致只有app.js被注入
+          // chunks: ["vendor", "app", "manifest"],
           template: "public/index.html",
           hash: true,
           filename: "index.html",
@@ -58,12 +69,6 @@ module.exports = {
           //scripts多个 arcgis js api应该最后引用，否则可能导致multiple define错误
           scripts: [ajsConfig.initPath],
           links: [ajsConfig.cssPath]
-        }),
-        new webpack.DefinePlugin({
-          "process.env": {
-            dojoPath: JSON.stringify(ajsConfig.dojoPath),
-            publicPath: JSON.stringify(publicPath)
-          }
         })
       ]
     };

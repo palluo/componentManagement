@@ -1,0 +1,998 @@
+{
+  "translateDateKeys": ["LASJ", "LARQ", "YSYJPFRQ", "RKRQ"],
+  "locatset": [
+    {
+      "xmlx": "gz1211003",
+      "lable": "建设项目用地预审",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/2",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/3",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/55",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWNB2900",
+      "lable": "设施农用地备案",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/5",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/6",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWNB3000",
+      "lable": "广州市高标准基本农田建设项目规划设计评审",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/8",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/9",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWNB3100",
+      "lable": "广州市高标准基本农田建设项目竣工验收",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/11",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/12",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWZS0900",
+      "lable": "征地预公告",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/14",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/15",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWNB2101",
+      "lable": "批准权在国务院的一年一批次用地报批",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/17",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/18",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWNB2102",
+      "lable": "批准权在省政府的分批次用地报批",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/17",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/18",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWNB2103",
+      "lable": "批准权在市政府的分批次用地报批",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/17",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWNB2104",
+      "lable": "单独选址的用地报批",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/17",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/18",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWXK0202",
+      "lable": "涉及占用基本农田的临时用地审批",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/20",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/21",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "临时用地范围",
+          "serviceName": "业务管理",
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/TDYWGL/MapServer"
+        },
+        {
+          "layertype": "dynamic",
+          "layername": "全市规划期末地类图斑",
+          "serviceName": "总体规划",
+          "url": "http://byxm/arcgis/rest/services/%E6%80%BB%E4%BD%93%E8%A7%84%E5%88%92%E9%98%B6%E6%AE%B5/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "GGWXK0201",
+      "lable": "不涉及占用基本农田的临时用地审批",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/20",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/21",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "临时用地范围",
+          "serviceName": "业务管理",
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/TDYWGL/MapServer"
+        },
+        {
+          "layertype": "dynamic",
+          "layername": "全市规划期末地类图斑",
+          "serviceName": "总体规划",
+          "url": "http://byxm/arcgis/rest/services/%E6%80%BB%E4%BD%93%E8%A7%84%E5%88%92%E9%98%B6%E6%AE%B5/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "GGWQT0900",
+      "lable": "用地结案",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/23",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/24",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "GGWZS0200",
+      "lable": "收回国有土地使用权",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/26",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/27",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "全市规划期末地类图斑",
+          "serviceName": "总体规划",
+          "url": "http://byxm/arcgis/rest/services/%E6%80%BB%E4%BD%93%E8%A7%84%E5%88%92%E9%98%B6%E6%AE%B5/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "gz0011002-001",
+      "lable": "办理《建设用地批准书》（公开出让项目）",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-002",
+      "lable": "办理《建设用地批准书》（协议出让项目）",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-003",
+      "lable": "办理土地划拨使用手续和《建设用地批准书》",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/33",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-004",
+      "lable": "自有国有建设用地再利用审核",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/33",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/34",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-005",
+      "lable": "办理建设用地批准书变更手续",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-006",
+      "lable": "办理在建工程项目建设用地批准书延期手续",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-007",
+      "lable": "办理建设用地批准文件动竣工延期手续",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/34",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-008",
+      "lable": "办理《建设用地批准书》（村民住宅）",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-009",
+      "lable": "办理建设用地批准书变更手续（村民住宅）",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-010",
+      "lable": "办理建设用地批准书延期手续（村民住宅）",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-011",
+      "lable": "办理《建设用地批准书》（农村经济发展用地、农村基础设施和公益设施用地）",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-012",
+      "lable": "办理建设用地批准书变更手续（农村经济发展用地、农村基础设施和公益设施用地）",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-013",
+      "lable": "办理建设用地批准书延期手续（农村经济发展用地、农村基础设施和公益设施用地）",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-014",
+      "lable": "协议出让行政合同签订",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/34",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "zgpt",
+      "lable": "总规平台",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.127:6080/arcgis/rest/services/ApvlMap/gz_sghy_spxmbjtc/MapServer/0",
+          "keyfield": "FGPROJECTCODE"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-015",
+      "lable": "土地出让合同变更协议签订",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/34",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz0011002-016",
+      "lable": "城市更新改造项目供地审核",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/31",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/32",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/33",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/34",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511001-001",
+      "lable": "办理《建设项目选址意见书》",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/37",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/38",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "建设项目选址",
+          "serviceName": "带图审批规划业务",
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GHYW/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "gz2511001-002",
+      "lable": "道路及轨道交通工程规划审查及《建设项目选址意见书》合并办理",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/39",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/38",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511001-003",
+      "lable": "《建设项目选址意见书》延期使用",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/39",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/38",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511002-001",
+      "lable": "新征建设用地办理《建设用地规划许可证》",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/37",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "规划导则地块",
+          "serviceName": "控制性规划导则",
+          "url": "http://byxm/arcgis/rest/services/%E6%8E%A7%E5%88%B6%E6%80%A7%E8%A7%84%E5%88%92%E5%AF%BC%E5%88%99/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "gz2511002-002",
+      "lable": "调整《建设用地规划许可证》及其附图、附件",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/39",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/40",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "建设用地复文",
+          "serviceName": "带图审批规划业务",
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GHYW/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "gz2511002-003",
+      "lable": "申请、调整或确认建设用地规划条件",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/37",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/39",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/40",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "规划导则地块",
+          "serviceName": "控制性规划导则",
+          "url": "http://byxm/arcgis/rest/services/%E6%8E%A7%E5%88%B6%E6%80%A7%E8%A7%84%E5%88%92%E5%AF%BC%E5%88%99/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "gz2511002-004",
+      "lable": "申请、调整或确认建设用地规划条件",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/39",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/40",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "规划导则地块",
+          "serviceName": "控制性规划导则",
+          "url": "http://byxm/arcgis/rest/services/%E6%8E%A7%E5%88%B6%E6%80%A7%E8%A7%84%E5%88%92%E5%AF%BC%E5%88%99/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "GGWNB1400",
+      "lable": "为政府储备用地出具选址意见",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/39",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/40",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "建设用地复文",
+          "serviceName": "带图审批规划业务",
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GHYW/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "GGWNB1500",
+      "lable": "出具储备用地规划条件",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/39",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/40",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "规划导则地块",
+          "serviceName": "控制性规划导则",
+          "url": "http://byxm/arcgis/rest/services/%E6%8E%A7%E5%88%B6%E6%80%A7%E8%A7%84%E5%88%92%E5%AF%BC%E5%88%99/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "GGWQT0200",
+      "lable": "规划选址前期工作",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/39",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/40",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "规划导则地块",
+          "serviceName": "控制性规划导则",
+          "url": "http://byxm/arcgis/rest/services/%E6%8E%A7%E5%88%B6%E6%80%A7%E8%A7%84%E5%88%92%E5%AF%BC%E5%88%99/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "gz2511003-001",
+      "lable": "新建建筑工程《建设工程规划许可证》",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/42",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/43",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-002",
+      "lable": "调整建筑工程《建设工程规划许可证》及附图附件",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/42",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/43",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-003",
+      "lable": "申请、调整道路及轨道交通工程规划条件",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/39",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/40",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-004",
+      "lable": "道路及轨道交通工程设计方案审查",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/45",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/46",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-005",
+      "lable": "办理道路及轨道交通工程《建设工程规划许可证》",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/47",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/48",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-006",
+      "lable": "调整道路及轨道交通工程《建设工程规划许可证》及其附图附件",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/47",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/48",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+
+    {
+      "xmlx": "gz2511003-007",
+      "lable": "申请、调整管线工程规划条件",
+      "querylayer": [
+        {
+          "url": "",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-008",
+      "lable": "管线工程设计方案审查",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/49",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/50",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/51",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-009",
+      "lable": "办理管线工程《建设工程规划许可证》",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/52",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/53",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/54",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-010",
+      "lable": "调整管线工程《建设工程规划许可证》",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/52",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/53",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/54",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-011",
+      "lable": "《建设工程规划许可证》延期使用",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/42",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/43",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-012",
+      "lable": "加建、改建、扩建建筑工程《建设工程规划许可证》",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/42",
+          "keyfield": "LABH"
+        },
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/43",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    },
+    {
+      "xmlx": "gz2511003-013",
+      "lable": "修建性详细规划（建设工程设计方案总平面图）审查",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/44",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "规划用地技术经济指标",
+          "serviceName": "带图审批规划业务",
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GHYW/MapServer"
+        }
+      ]
+    },
+    {
+      "xmlx": "gz2511003-014",
+      "lable": "调整修建性详细规划（建设工程设计方案总平面图）",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GTGHYWGL/MapServer/44",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": [
+        {
+          "layertype": "dynamic",
+          "layername": "规划用地技术经济指标",
+          "serviceName": "带图审批规划业务",
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GHYW/MapServer"
+        }
+      ]
+    },
+
+    {
+      "xmlx": "gz2511004-001",
+      "lable": "建筑工程规划验收",
+      "querylayer": [
+        {
+          "url": "http://172.30.240.69:6080/arcgis/rest/services/GHYWGL/MapServer/10",
+          "keyfield": "LABH"
+        }
+      ],
+      "displaylayers": []
+    }
+  ],
+  "traversalset": [
+    {
+      "url": "http://byxm/arcgis/rest/services/%E5%BB%BA%E8%AE%BE%E7%94%A8%E5%9C%B0/MapServer/3",
+      "field": "LANDUSEPERMITNAME"
+    },
+    {
+      "url": "http://172.30.240.101:6080/arcgis/rest/services/%E5%BB%BA%E8%AE%BE%E9%A1%B9%E7%9B%AE%E7%94%A8%E5%9C%B0%E9%A2%84%E5%AE%A1/MapServer/0",
+      "field": "YSYJWH"
+    },
+    {
+      "url": "http://byxm/arcgis/rest/services/%E5%BB%BA%E8%AE%BE%E7%94%A8%E5%9C%B0/MapServer/5",
+      "field": "LANDUSEPERMITNAME"
+    },
+    {
+      "url": "http://byxm/arcgis/rest/services/%E5%BB%BA%E8%AE%BE%E7%94%A8%E5%9C%B0/MapServer/1",
+      "field": "LANDUSEPERMITNAME"
+    },
+    {
+      "url": "http://byxm/arcgis/rest/services/Search/MapServer/4",
+      "field": "NAME"
+    },
+    {
+      "url": "http://byxm/arcgis/rest/services/%E5%9B%BE%E5%B9%85%E4%BF%A1%E6%81%AF%E8%A1%A8/MapServer/0",
+      "field": "MAPNO"
+    },
+    {
+      "url": "http://byxm/arcgis/rest/services/%E5%9B%BE%E5%B9%85%E4%BF%A1%E6%81%AF%E8%A1%A8/MapServer/2",
+      "field": "MAPNAME"
+    },
+
+    {
+      "url": "http://byxm/arcgis/rest/services/%E4%BF%AE%E5%BB%BA%E6%80%A7%E8%AF%A6%E7%BB%86%E8%A7%84%E5%88%92/MapServer/1",
+      "field": "PERMITNAME"
+    },
+    {
+      "url": "http://byxm/arcgis/rest/services/%E4%BF%AE%E5%BB%BA%E6%80%A7%E8%AF%A6%E7%BB%86%E8%A7%84%E5%88%92/MapServer/12",
+      "field": "PERMITNAME"
+    },
+    {
+      "url": "http://byxm/arcgis/rest/services/%E5%BB%BA%E7%AD%91%E5%B7%A5%E7%A8%8B/MapServer/5",
+      "field": "PERMITNAME"
+    },
+    {
+      "url": "http://byxm/arcgis/rest/services/%E5%BB%BA%E7%AD%91%E5%B7%A5%E7%A8%8B/MapServer/7",
+      "field": "PERMITNAME"
+    }
+  ]
+}
