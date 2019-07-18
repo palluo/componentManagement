@@ -1,15 +1,18 @@
-/* eslint-disable prettier/prettier */
-import SceneLayer from 'esri/layers/SceneLayer'
-import TileLayer from "esri/layers/TileLayer"
-import GraphicsLayer from 'esri/layers/GraphicsLayer'
-import ImageryLayer from 'esri/layers/ImageryLayer'
+import loadModules from "@/utils/loadModules";
 
 export default {
-    createLayer(objLayer) {
+    async createLayer(objLayer) {
+        let currlayer;
+        const { SceneLayer, TileLayer, GraphicsLayer, ImageryLayer} = await loadModules(
+            "esri/layers/SceneLayer",
+            "esri/layers/TileLayer",
+            "esri/layers/GraphicsLayer",
+            "esri/layers/ImageryLayer"
+          );
         if (objLayer.onlineId) {
-            return objLayer.onlineId;
+            currlayer = objLayer.onlineId;
         } else{
-            let currlayer, type = objLayer.type;
+            let type = objLayer.type;
             switch (type) {
                 case 'scenelayer': {
                     currlayer = new SceneLayer(objLayer.url);
@@ -28,7 +31,7 @@ export default {
                     break;
                 }
             }
-            return currlayer;
         }
+        return currlayer;
     }
 }

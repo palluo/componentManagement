@@ -1,76 +1,82 @@
-const path = require("path");
-const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 
-//本地方案：复制官方api到/public/ajs目录
-const ajsLocalPath = "./ajs";
-//const ajsOfficialPath = "http://127.0.0.1/api/arcgis_js_v411_api";
-const ajsOfficialPath = "https://js.arcgis.com/4.11";
-const ajsConfigs = {
-  official: {
-    cssPath: `${ajsOfficialPath}/esri/themes/light/main.css`,
-    dojoPath: `${ajsOfficialPath}/dojo`,
-    initPath: `${ajsOfficialPath}/init.js`
-  },
-  local: {
-    cssPath: `${ajsLocalPath}/esri/themes/light/main.css`,
-    dojoPath: `${ajsLocalPath}/dojo`,
-    initPath: `${ajsLocalPath}/init.js`
-  }
-};
-// const ajsConfig = ajsConfigs.local;
-const ajsConfig = ajsConfigs.official;
-const publicPath = "./";
+const path = require("path");
+
+const productionGzipExtensions = ["js", "css"];
+
 function resolve(dir) {
-    return path.join(__dirname, dir);
-  }
+  return path.join(__dirname, dir);
+}
+
 module.exports = {
-  publicPath,
-  // outputDir: 'vue-arcgis',
-  productionSourceMap: false, //生产环境关闭SourceMap
-  // chainWebpack: config => { },
-  configureWebpack: config => {
-      // 别名
-    //   config.resolve.alias
-    //   .set("@", resolve("src"));
-    return {
-      output: {
-        libraryTarget: "amd"
-      },
-      devtool: "source-map",
-      externals: [
-        (context, request, callback) => {
-          if (
-            /^dojo/.test(request) ||
-            /^dojox/.test(request) ||
-            /^dijit/.test(request) ||
-            /^esri/.test(request)
-          ) {
-            return callback(null, `amd ${request}`);
-          }
-          return callback();
-        }
-      ],
-      plugins: [
-        new webpack.DefinePlugin({
-          "process.env": {
-            dojoPath: JSON.stringify(ajsConfig.dojoPath),
-            publicPath: JSON.stringify(publicPath)
-          }
-        }),
-        new HtmlWebpackPlugin({
-          inject: false,
-          // 会导致只有app.js被注入
-          // chunks: ["vendor", "app", "manifest"],
-          template: "public/index.html",
-          hash: true,
-          filename: "index.html",
-          title: "vue arcgis",
-          //scripts多个 arcgis js api应该最后引用，否则可能导致multiple define错误
-          scripts: [ajsConfig.initPath],
-          links: [ajsConfig.cssPath]
+  baseUrl: process.env.NODE_ENV === "development" ? "/" : "./",
+  devServer: {
+    port: 9097,
+    open: true
+  },
+  css: {
+    loaderOptions: {
+      // 给 sass-loader 传递选项
+      sass: {
+        data: `@import "@/styles/index.scss";`
+      }
+    }
+  },
+  chainWebpack: config => {
+    // 别名
+    config.resolve.alias
+      .set("@", resolve("src"))
+
+    // use svg
+    const svgRule = config.module.rule("svg");
+    svgRule.uses.clear();
+    svgRule.include
+      .add(resolve("src/icon/svg"))
+      .end()
+      .use("svg-sprite-loader")
+      .loader("svg-sprite-loader")
+      .options({
+        symbolId: "icon-[name]"
+      })
+      .end();
+    // image exclude svg
+    const imagesRule = config.module.rule("images");
+    imagesRule
+      .test(/\.(png|jpe?g|gif|webp|svg)(\?.*)?$/)
+      .exclude.add(resolve("src/icon/svg"))
+      .end();
+  },
+  // 生产环境打包去除console.log
+  configureWebpack: {
+    optimization: {
+      minimizer: [
+        new UglifyJsPlugin({
+          uglifyOptions: {
+            compress: {
+              drop_console: false,
+              drop_debugger: true
+            }
+          },
+          parallel: true,
+          sourceMap: true
         })
       ]
-    };
+    },
+    // gzip
+    plugins:
+      process.env.NODE_ENV === "production"
+        ? [
+            new CompressionPlugin({
+              filename: "[path].gz[query]",
+              algorithm: "gzip",
+              test: new RegExp(
+                "\\.(" + productionGzipExtensions.join("|") + ")$"
+              ),
+              threshold: 10240,
+              minRatio: 0.8
+            })
+          ]
+        : []
   }
 };

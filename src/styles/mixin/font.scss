@@ -1,0 +1,55 @@
+// 字体大小，颜色,字体
+@mixin scfw($size, $color, $family, $weight) {
+  font-size: $size;
+  color: $color;
+  font-family: $family;
+  font-weight: $weight;
+}
+
+// 字体已全局设置，无须再设字体
+// 如不用全局字体，请使用上面的方案
+@mixin scw($size, $color: $fontColor_1, $weight: 400) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+
+@mixin T1 {
+  @include scw(1.46rem, $fontColor_1, 700);
+}
+
+@mixin T2 {
+  @include scw(1.25rem, $fontColor_1, 700);
+}
+
+@mixin T3 {
+  @include scw(0.94rem, $fontColor_1, 500);
+}
+
+@mixin TBase {
+  @include scw(0.83rem);
+}
+
+@mixin TDateInput {
+  @include scw(0.73rem);
+}
+
+@mixin TDataeye {
+  @include scw(0.63rem);
+}
+
+@mixin HeaderFont {
+  @include scw(1.04rem, $color1d1d1d, 700);
+}
+
+@mixin SystemTitleFs {
+  @include scw(1.25rem, $hTitleFC, 700);
+}
+
+@mixin MenuT1 {
+  @include scw(1.04rem, $colorffffff, 700);
+}
+
+@mixin MenuT2 {
+  @include scw(0.83rem, $colorffffff, 700);
+}

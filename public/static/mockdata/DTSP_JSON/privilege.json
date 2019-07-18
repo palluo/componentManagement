@@ -1,0 +1,42 @@
+{
+    "map": {
+        "operationallayers": [
+            {
+                "guid": "998e6f7f5a40499799e6d3e75bd6797d",
+                "name": "TianheBuildings_D1",
+                "url": "http://bimmid-sv.up.gz/server/rest/services/Hosted/PaZhouXiQiaoLiang_A/SceneServer",
+                "type": "scenelayer",
+                "icon": null,
+                "visible": true,
+                "dynamicToken": false
+            },
+            {
+                "guid": "998e6f7f5a40499799e6d3e75bd6797d1",
+                "name": "TianheBuildings_B",
+                "url": "http://bimmid-sv.up.gz/server/rest/services/Hosted/PaZhouXiChangDi_A/SceneServer",
+                "type": "scenelayer",
+                "icon": null,
+                "visible": true,
+                "dynamicToken": false
+            },
+            {
+                "guid": "998e6f7f5a40499799e6d3e75bd6797d2",
+                "name": "TianheBuildings_A",
+                "url": "http://bimmid-sv.up.gz/server/rest/services/Hosted/PaZhouXiBuildings_A/SceneServer",
+                "type": "scenelayer",
+                "icon": null,
+                "visible": true,
+                "dynamicToken": false
+            },
+            {
+                "guid": "998e6f7f5a40499799e6d3e75bd6797d2",
+                "name": "TianheBuildings_A",
+                "url": "http://bimmid-sv.up.gz/server/rest/services/Hosted/YueKe/SceneServer",
+                "type": "scenelayer",
+                "icon": null,
+                "visible": true,
+                "dynamicToken": false
+            }
+        ]
+    }
+}

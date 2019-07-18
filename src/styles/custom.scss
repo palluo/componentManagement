@@ -1,0 +1,107 @@
+/*
+  * 变量配置
+*/
+
+// Color
+$color343c4c: #343c4c;
+$color1890ff: #1890ff;
+$colorf9f9f9: #f9f9f9;
+
+// 辅色
+$color004450: #004450;
+$colorff5f18: #ff5f18;
+$colorf1b617: #f1b617;
+$colorecf4fa: #ecf4fa;
+$colordcdcdc: #dcdcdc;
+$colorffffff: #ffffff;
+$colorf8f8f8: #f8f8f8;
+$colorefefef: #efefef;
+$colorf8f8fa: #f8f8fa;
+$colore9edf3: #e9edf3;
+$color2bc267: #2bc267;
+$colorff181d: #ff181d;
+$colorf1c347: #f1c347;
+$colorf3f3f3: #f3f3f3;
+
+// 字体色
+$color1d1d1d: #1d1d1d;
+$color999999: #999999;
+$colorb4b4b4: #b4b4b4;
+$color666666: #666666;
+$colorff0000: #ff0000;
+// 字体类型
+$fontFamily: "Microsoft YaHei", "PingFang SC";
+
+// 在系统中具体使用时的变量
+// Menu
+// 背景颜色
+$mBgColor: $color343c4c;
+// 选中颜色
+$mSelectedColor: $color1890ff;
+// 选中背景颜色
+$mSelectedBgColor: $colorb4b4b4;
+
+// Header
+// 系统标题颜色
+$hTitleFC: $color004450;
+// 子系统标题颜色
+$hSubSysFC: $color004450;
+// 子系统里的子菜单字体颜色
+$hSubMenuFC: $color343c4c;
+// 子系统里的子菜单字体选中颜色
+$hSubMenuFCSelected: $color1890ff;
+
+// 基础字体
+$baseFontFamily: $fontFamily;
+// 底色
+$baseBgColor: $colorf9f9f9;
+
+// 主要的字体颜色
+$fontColor_1: $color1d1d1d;
+$fontColor_2: $color999999;
+$fontColor_3: $colorb4b4b4;
+
+// 搜索框的默认宽度
+$searchDefaultWidth: 15.94rem;
+
+$basePanelBackgroundColor: rgba(255, 255, 255, 1);
+
+// shadow -- px
+$shadow-header: 0px 3px 13px 0px rgba(0, 0, 0, 0.07);
+$shadow-normal: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+
+// table 字号大小
+@mixin cover-ivu-table {
+  /deep/ .ivu-table {
+    @include TBase();
+    /deep/ .ivu-table-header {
+      font-size: 0.93rem !important;
+    }
+  }
+}
+
+// disabled
+@mixin disabled {
+  opacity: 0.4;
+  &:hover {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.system-model-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  &:hover {
+    opacity: 0.4;
+    cursor: not-allowed !important;
+  }
+}
+
+// 出现...
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

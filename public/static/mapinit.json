@@ -1,0 +1,52 @@
+{
+    "extent":{
+        "x": 45170.5,
+        "y": 26243.5,
+        "z":0,
+        "zoom": null,
+        "scale": null,
+        "heading":30,
+        "tilt":70,
+        "wkid": 2435,
+        "extent": {
+          "xmin": 45096,
+          "ymin": 25651,
+          "xmax": 45245,
+          "ymax": 26836
+        },
+        "note": "该属性不做实际使用，用于备注，zoom、scale、extent这3个参数任意设置其中一个，按此顺序进行地图初始化，遍历3个参数，某个参数有值时就取该参数，并不再向后遍历"
+      },
+    "basemaps": [
+        {
+            "guid": "998e6f7f5a40499799e6d3e75bd6797",
+            "name": "影像1",
+            "wellId":"",
+            "portalId":"",
+            "url": "http://bimmid-sv.up.gz/server/rest/services/Hosted/pzxi_tdom_gzx_tif/MapServer",
+            "type": "tileLayer",
+            "icon": null,
+            "visible": true,
+            "dynamicToken": false
+        },
+        {
+            "guid": "998e6f7f5a40499799e6d3e75bd67972",
+            "name": "影像2",
+            "wellId":"",
+            "portalId":"",
+            "url": "http://bimmid-sv.up.gz/server/rest/services/pzxi_dem_gzx_tif/ImageServer",
+            "type": "tileLayer",
+            "icon": null,
+            "visible": true,
+            "dynamicToken": false
+        }
+    ],
+    "geometryService": {
+        "guid": "074715d939974297843e2e2f26199555",
+        "name": "几何服务",
+        "url": "http://192.168.1.53:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+        "type": "geometry",
+        "icon": null,
+        "visible": false,
+        "dynamicToken": false
+    }
+}

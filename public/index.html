@@ -7,18 +7,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= process.env.BASE_URL %>favicon.ico">
   <title>广州一体化三维信息平台</title>
-
-  <!-- cdn links -->
-  <% for(var i in htmlWebpackPlugin.options.links ) {%>
-  <% var link=htmlWebpackPlugin.options.links[i]%>
-  <link rel="stylesheet" type="text/css" href="<%= link %>" />
-  <% } %>
-
-  <!-- 注入编译后的css -->
-  <% for(var i in htmlWebpackPlugin.files.css ) {%>
-  <% var link=htmlWebpackPlugin.files.css[i]%>
-  <link rel="stylesheet" type="text/css" href="<%= process.env.publicPath||'./' %><%= link %>" />
-  <% } %>
 </head>
 
 <body>
@@ -28,36 +16,6 @@
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
-  <script>
-    window.dojoConfig = {
-      afterOnLoad: true,
-      async: true,
-      baseUrl: '<%= process.env.dojoPath %>'
-    }
-  </script>
-  <!-- cdnjs -->
-  <% for(var i in htmlWebpackPlugin.options.scripts) {%>
-  <% var script=htmlWebpackPlugin.options.scripts[i]%>
-  <script src="<%= script %>"></script>
-  <% } %>
-
-  <!-- 
-  <script>
-    var fileArray = [];
-    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
-    fileArray.push('<%= process.env.publicPath||"./" %><%= htmlWebpackPlugin.files.chunks[chunk].entry %>');
-    <% } %>
-    require(fileArray, function () {});
-  </script> -->
-
-  <script>
-    // 注入编译后的js
-    var fileArray = [];
-    <% for (var chunk in htmlWebpackPlugin.files.js) { %>
-      fileArray.push('<%= process.env.publicPath||"./" %><%= htmlWebpackPlugin.files.js[chunk] %>');
-    <% } %>
-      require(fileArray, function () { });
-  </script>
 </body>
 
 </html>

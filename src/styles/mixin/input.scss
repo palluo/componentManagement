@@ -1,0 +1,45 @@
+// 输入框通配
+// font-size:14px
+@mixin Input2 {
+  @include TDateInput();
+  @include B2();
+  line-height: 1.56rem;
+}
+// font-size:16px
+@mixin Input1 {
+  @include TBase();
+  @include B1();
+  line-height: 1.98rem;
+}
+// 输入框里右边带有的图标
+// font-size:14px
+@mixin InputIcon2 {
+  @include TDateInput();
+  line-height: 1.56rem;
+  height: 1.56rem;
+}
+// font-size:16px
+@mixin InputIcon1 {
+  @include TBase();
+  line-height: 1.98rem;
+  height: 1.98rem;
+}
+@mixin cover-ivu-input-super($size: 1) {
+  /deep/ .ivu-input {
+    @if $size == 1 {
+      @include Input1();
+    }
+    @if $size == 2 {
+      @include Input2();
+    }
+    // border: 0.05rem solid $colorb4b4b4;
+  }
+  /deep/ .ivu-input-icon {
+    @if $size == 1 {
+      @include InputIcon1();
+    }
+    @if $size == 2 {
+      @include InputIcon2();
+    }
+  }
+}

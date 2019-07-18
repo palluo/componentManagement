@@ -1,8 +1,11 @@
 /* eslint-disable prettier/prettier */
-import  QueryTask  from "esri/tasks/QueryTask";
-import  Query from "esri/tasks/support/Query";
+import loadModules from "@/utils/loadModules"
 
-export const queryTaskExecute = (url, param) => {
+export const queryTaskExecute = async(url, param) => {
+    const { QueryTask, Query } = await loadModules(
+        "esri/tasks/QueryTask",
+        "esri/tasks/support/Query"
+      );
     let queryTask = new QueryTask({
         url: url
     });

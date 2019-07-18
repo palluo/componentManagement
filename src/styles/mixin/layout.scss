@@ -1,0 +1,133 @@
+// 背景颜色
+@mixin bg($bg: $baseBgColor) {
+  background: $bg;
+}
+
+// 头部
+@mixin header() {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-bottom: 0.05rem solid #dcdfe6;
+}
+
+// 头部标题
+@mixin header-title() {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #000000;
+  font-family: "Microsoft YaHei";
+}
+
+// 主体内容 = 全局 - 头部
+@mixin content() {
+  width: 100%;
+  height: calc(100% - 3rem);
+}
+
+// 底部
+@mixin footer() {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #d3d7db;
+  padding-left: 1rem;
+}
+
+@mixin step-nav() {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d3d7db;
+}
+
+// 工具栏
+@mixin toolbox() {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+// 表格主体 = 主体 - 工具栏
+@mixin index-container() {
+  width: 100%;
+  height: calc(100% - 3rem);
+}
+
+@mixin table-part() {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 3rem);
+  overflow: auto;
+}
+
+// 底部分页
+@mixin pageNav-part() {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+// 编辑和新建界面右侧图片
+@mixin formImg() {
+  width: 35rem;
+  height: 30rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: #808080 1px dashed;
+}
+
+// 编辑和新建界面小字-***信息
+@mixin commonText {
+  color: #000000;
+  font-size: 1rem;
+}
+
+// 编辑和新建界面小字-红色为必填项
+@mixin specialText {
+  color: #808080;
+  font-size: 0.63rem;
+}
+
+// 头部
+@mixin header-v2($width: 100%) {
+  width: $width;
+  height: 3rem;
+  line-height: 1.5;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+// 头部标题
+@mixin header-title-v2($fontColor: $fontColor_1) {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: $fontColor;
+  font-family: $baseFontFamily;
+}
+
+@mixin layout-header() {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $colordcdcdc;
+}
